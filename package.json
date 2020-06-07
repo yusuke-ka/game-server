@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/express-ws": "^3.0.0",
+    "@types/node": "^13.13.5",
+    "express": "^4.17.1",
+    "express-ws": "^4.0.0",
+    "ts-node": "^8.9.1",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:ver": "tsc -v",
+    "tsc:init": "tsc --init",
+    "ts-node": "ts-node",
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node ./dist/server.js"
+  },
+  "dependencies": {
+    "@types/async-lock": "^1.1.2",
+    "async-lock": "^1.2.3"
+  }
+}
